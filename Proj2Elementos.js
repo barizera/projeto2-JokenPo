@@ -31,7 +31,7 @@ do {
     let quantidaderodadas = +prompt(`Bem vindo, ${player}!! Quantas rodadas deseja jogar?`)
     
     // Function isNaN(), entrou no código para que não deixasse o usuário dados que não sejam números.
-    while (isNaN(quantidaderodadas) || quantidaderodadas === 0) {
+    while (isNaN(quantidaderodadas) || quantidaderodadas <= 0) {
     console.log("Digite um número, e que ele seja maior que 0(Zero)!")
     
     quantidaderodadas = +prompt(`Bem vindo, ${player}!! Quantas rodadas deseja jogar?`)
